@@ -13,3 +13,13 @@ for (let i = 0; i < str.length; i++) {
     }
 }
 console.log(count);
+
+
+// Alternative
+
+// for (let letter_check of str) {
+//     if (letter_check.toLowerCase() === 'a') {
+//         count++;
+//     }
+// }
+// console.log(count);
