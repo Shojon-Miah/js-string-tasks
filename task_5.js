@@ -3,13 +3,23 @@
 Capitalize Every first Letter of each word in a String
 */
 
+let str = "i love javascript programming";
+
+let words = str.split(" ");
+let result = [];
+
+for (let word of words) {
+  let capitalWord = word[0].toUpperCase() + word.slice(1);
+  result.push(capitalWord);
+}
+
+let finalString = result.join(" ");
+console.log(finalString);
+
 
 /***
-To capitalize the first letter of each word in a string using JavaScript, the process involves splitting the string into an array of words, capitalizing the first letter of each word, and then joining the words back into a single string.
-*/
 
-
-function capitalizeWords(str) {
+italizeWords(str) {
   // Split the string into an array of words
   const words = str.split(' ');
 
@@ -25,7 +35,9 @@ function capitalizeWords(str) {
 }
 
 // Example usage:
-const originalString = "capitalize every first letter of each word";
+const originalString = "i capitalize every first letter of each word";
 const capitalizedString = capitalizeWords(originalString);
 console.log(capitalizedString); 
 // Output: "Capitalize Every First Letter Of Each Word"
+
+*/

@@ -1,16 +1,25 @@
 /**
 ### Task-3: 
-Check whether a string contains all the vowels `a`, `e`, `i`, `o`, `u` 
+Check whether a string contains all the vowels `a`, `e`, `i`, `o`, `u`.
 
 */
 
-let str = "I love programming and want to be a web developer";
-let count = 0;
+let string = "I love programming and want to be a web developer";
 
-for (let i = 0; i < str.length; i++) {
-    let letter_check = str[i];
-    if (letter_check == 'a' || letter_check == 'e' || letter_check == 'i' || letter_check == 'o' || letter_check == 'u') {
-        count += 1;
-    }
+let str = "The quick brown fox jumps over the lazy dog";
+
+
+//let str = "education";
+str = str.toLowerCase();
+
+if (
+  str.includes("a") &&
+  str.includes("e") &&
+  str.includes("i") &&
+  str.includes("o") &&
+  str.includes("u")
+) {
+  console.log("All vowels are present");
+} else {
+  console.log("All vowels are NOT present");
 }
-console.log(count);

@@ -29,6 +29,21 @@ for (let i = 0; i < str.length; i++) {
 
 console.log(newStr);
 
+
+let str1 = "I love X programming and wantx to be a xX developer";
+
+if (str1.includes("x")) {
+  str1 = str1.replace(/x/g, "y");
+}
+
+if (str1.includes("X")) {
+  str1 = str1.replace(/X/g, "Y");
+}
+
+console.log(str1);
+
+
+
 // using replace()
 
 // let str = "The quick brown foXx jumps over the lazy dog.";
