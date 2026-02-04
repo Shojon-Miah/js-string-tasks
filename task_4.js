@@ -29,7 +29,7 @@ for (let i = 0; i < str.length; i++) {
 
 console.log(newStr);
 
-
+// using replace()
 let str1 = "I love X programming and wantx to be a xX developer";
 
 if (str1.includes("x")) {
@@ -74,5 +74,20 @@ console.log(str1);
 reverse -> Using Array Methods (for specific index replacement):
 If you need to replace a character at a specific index, you can convert the string to an array using split(), modify the array, and then join it back into a string using join() .
 
+
+*/
+
+
+/**
+
+এখানে কী হচ্ছে
+
+includes() → x বা X আছে কিনা চেক
+replace() → অক্ষর বদলানো
+/x/g → সব x কে replace করবে
+/X/g → সব X কে replace করবে
+
+replace() default ভাবে শুধু প্রথমটা বদলায়
+তাই সবগুলো বদলাতে g flag ব্যবহার করা হয়
 
 */
